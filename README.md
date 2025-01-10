@@ -80,15 +80,5 @@ Ce projet est sous licence MIT.
 - **Contribuer** : Décrit comment d'autres développeurs peuvent contribuer à l'application.
 - **Licence** : Mentionne sous quelle licence le projet est distribué.
 
-### Comment ajouter ce fichier à votre dépôt :
 
-1. Créez un fichier `README.md` à la racine de votre projet.
-2. Copiez et collez le contenu ci-dessus dans ce fichier.
-3. Enregistrez le fichier.
-4. Ajoutez-le au contrôle de version avec les commandes suivantes :
-
-```bash
-git add README.md
-git commit -m "Ajout du fichier README.md"
-git push origin main
 
