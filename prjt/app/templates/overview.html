@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperçu des données</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/ov.css' %}">
+</head>
+<body>
+    <h1>Aperçu des données</h1>
+    <h2>Colonnes disponibles :</h2>
+    <ul>
+        {% for column in columns %}
+            <li>{{ column }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Premières lignes :</h2>
+    
+    {{ preview|safe }}
+    <!-- Permet de rendre le contenu HTML dynamique dans la variable preview. -->
+    <a href="{% url 'home' %}">Home</a>
+
+</body>
+</html>

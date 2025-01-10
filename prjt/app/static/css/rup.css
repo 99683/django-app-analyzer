@@ -1,0 +1,83 @@
+/* Réinitialisation de quelques styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #482f2f;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style du titre */
+h1 {
+    font-size: 36px;
+    color: #d594b7;
+    margin-bottom: 20px;
+}
+
+/* Message d'erreur */
+p {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Style du formulaire */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Style du champ de fichier */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style du bouton de soumission */
+button {
+    background-color: #e180b5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol du bouton */
+button:hover {
+    background-color: #e388c3;
+}
+
+/* Style du lien "Home" pour le rendre comme un bouton */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    background-color: #cd8fb3; /* Couleur de fond identique au bouton */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol du lien "Home" */
+a:hover {
+    background-color: #bf87a1; /* Même effet de survol que le bouton */
+}

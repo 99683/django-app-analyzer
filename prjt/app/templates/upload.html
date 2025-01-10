@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importer un fichier</title>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rup.css' %}">
+
+</head>
+
+<body >
+    <h1>
+        Importer un fichier CSV
+    </h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data"> 
+        <!-- enctype: permet de télécharger un fichier depuis un formulaire HTML. -->
+        {% csrf_token %}
+<!-- 
+        ajoute un jeton de sécurité pour protéger contre les attaques CSRF (Cross-Site Request Forgery). -->
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Télécharger</button>
+    
+    </form>
+
+    <!-- <button onclick="window.location.href='\templates\home.html' ">Home</button> -->
+
+    <a href="{% url 'home' %}">Home</a>
+
+</body>
+</html>

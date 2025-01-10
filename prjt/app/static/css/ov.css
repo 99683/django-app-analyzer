@@ -1,0 +1,82 @@
+/* Définition des styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    flex-direction: column; /* Pour que les éléments s'alignent verticalement */
+}
+
+h1 {
+    color: #2C3E50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #34495E;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+    display: flex; /* Utiliser flexbox pour les aligner sur une seule ligne */
+    flex-wrap: wrap; 
+}
+
+ul li {
+    background-color: #ecf0f1;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    text-align: left;
+    margin-right: 20px; /* Plus d'espace entre les colonnes */
+    
+}
+
+/* Centrage du tableau avec une largeur limitée */
+#preview-table {
+    margin: 20px auto;
+    width: 80%; /* Limiter la largeur du tableau */
+    max-width: 800px; /* Largeur maximale */
+    border-collapse: collapse;
+}
+
+#preview-table th, #preview-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#preview-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+#preview-table td {
+    background-color: #ecf0f1;
+}
+
+/* Lien Home */
+a {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}

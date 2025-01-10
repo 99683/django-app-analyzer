@@ -1,0 +1,97 @@
+/* Définition des styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    flex-direction: column; /* Pour que les éléments s'alignent verticalement */
+}
+
+h1 {
+    color: #2C3E50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 300px; /* Limiter la largeur du formulaire */
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #34495E;
+}
+
+select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+h2 {
+    color: #34495E;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2C3E50;
+}
+
+/* Lien Home */
+a {
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}

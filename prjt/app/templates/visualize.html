@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/vis.css' %}">
+</head>
+<body>
+    <h1>Visualisation des données</h1>
+    <form method="get">
+        <label for="column">Select a column :</label>
+        <select name="column" id="column">
+            {% for column in columns %}
+                <option value="{{ column }}">{{ column }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Visualiser</button>
+    </form>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if image %}
+        <img src="data:image/png;base64,{{ image }}" alt="Graphique">
+    {% endif %}
+
+    {% if heatmap %}
+        <h2>Heatmap :</h2>
+        <img src="data:image/png;base64,{{ heatmap }}" alt="Heatmap">
+    {% else %}
+    <p>Aucune donnée numérique disponible pour générer une heatmap.</p>
+    {% endif %}
+    
+    <a href="{% url 'home' %}">Home</a>
+
+</body>
+</html>
