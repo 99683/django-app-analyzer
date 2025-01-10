@@ -67,10 +67,6 @@
 ## Contributions
 Si vous souhaitez contribuer à ce projet, vous pouvez faire un fork du repository et soumettre des pull requests.
 
-## License
-Ce projet est sous licence MIT.
-
-
 ### Explications des sections :
 - **Description** : Donne une brève introduction sur l'objectif du projet.
 - **Fonctionnalités** : Liste les fonctionnalités principales de l'application.
