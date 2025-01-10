@@ -20,7 +20,7 @@
     </form>
 
     {% if error %}
-    <p style="color: red;">{{ error }}</p>
+    <p style="color: rgb(4, 255, 0);">{{ error }}</p>
     {% endif %}
 
     {% if image %}
@@ -30,9 +30,8 @@
     {% if heatmap %}
         <h2>Heatmap :</h2>
         <img src="data:image/png;base64,{{ heatmap }}" alt="Heatmap">
-    {% else %}
-    <p>Aucune donnée numérique disponible pour générer une heatmap.</p>
     {% endif %}
+    
     
     <a href="{% url 'home' %}">Home</a>
 

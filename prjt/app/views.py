@@ -6,7 +6,8 @@ from io import BytesIO
 import base64
 from django.shortcuts import render
 
-
+# contient la logique du code
+# Récupère les données nécessaires, prépare un contexte, et renvoie un template pour l'affichage
 def upload_file(request):
     if request.method == 'POST':
         csv_file = request.FILES['file']
@@ -44,7 +45,7 @@ def visualize(request):
     data = pd.DataFrame(request.session.get('data'))  # recupere data frm session
     column = request.GET.get('column')  # Obtenir la colonne selected
     if column not in data.columns:
-        return render(request, 'visualize.html', {'error': 'Colonne invalide.', 'columns': data.columns})
+        return render(request, 'visualize.html', { 'columns': data.columns})
 
     # generate histogram 
     plt.figure(figsize=(10, 6))
@@ -66,6 +67,7 @@ def visualize(request):
             sns.heatmap(numeric_data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
             buf = BytesIO()
             plt.savefig(buf, format='png')
+            # BytesIO saves image's bits
             plt.close()
             buf.seek(0)
             heatmap_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
