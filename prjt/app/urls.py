@@ -12,7 +12,5 @@ urlpatterns = [
 
     path('statistics/', views.statistics, name='statistics'),
 
-
-
 ]
 
