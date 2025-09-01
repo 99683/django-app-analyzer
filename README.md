@@ -42,6 +42,11 @@
     pip install -r requirements.txt
     ```
 
+6. Changer le repertoire :
+    ```bash
+    cd prjt
+    ```
+
 6. Effectuez les migrations de la base de données :
     ```bash
     python manage.py migrate
